@@ -1,6 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
+  
+  @media screen and (max-width: 1199.98px) {
+    overflow-x: hidden;
+  }
 }
 
 img {

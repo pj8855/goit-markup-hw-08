@@ -14,11 +14,29 @@ address {
 
 .footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) { 
+    gap: 0;
+  }
 }
 
 .footer__address {
   width: 231px;
+  text-align: center;
+
+  @media screen and (min-width: 1199.98px) {
+    text-align: left;
+  }
 }
 
 .footer__item {
@@ -34,16 +52,25 @@ address {
 
 .footer__group {
   width: 206px;
-  margin-left: 70px;
+  
+  @media screen and (min-width: 1199.98px) {
+    margin-left: 70px;
+  }
 }
 
 .footer__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--footer-color);
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+
+  @media screen and (min-width: 1199.98px) {
+    text-align: left;
+    margin: 0 0 20px;
+  }
 }
 
 .footer__socials {

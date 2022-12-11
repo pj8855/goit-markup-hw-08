@@ -26,18 +26,18 @@
           Web<span class="logo--header">Studio</span>
         </a>
 
-        <nav class="menu">
-          <ul class="menu__list list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link link">Студія</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Студія</a>
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link current">
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link current">
                 Портфоліо
               </a>
             </li>
-            <li class="menu__item">
-              <a href="./contacts" class="menu__link link">Контакти</a>
+            <li class="nav__item">
+              <a href="./contacts" class="nav__link link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -55,6 +55,16 @@
             +38 096 111 11 11
           </a>
         </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" fill="currentColor">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -87,9 +97,18 @@
             <li class="projects__item">
               <div class="projects__thumb">
                 <img
-                  src="./img/project-img-1.jpg"
+                  srcset="
+                    .\img\projects\img1_354.jpg 354w,
+                    .\img\projects\img1_370.jpg 370w
+                    .\img\projects\img1_450.jpg 450w,
+                    .\img\projects\img1_708.jpg 708w,
+                    .\img\projects\img1_740.jpg 740w,
+                    .\img\projects\img1_900.jpg 900w
+                  "
+                  src="./img/projects/img1_450.jpg"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   alt="Веб-сайт Технокряк"
-                  width="370"
+                  loading="lazy"
                 />
                 <div class="projects__overlay">
                   <p class="projects__description">
@@ -107,9 +126,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-2.jpg"
+                srcset="
+                  .\img\projects\img2_354.jpg 354w,
+                  .\img\projects\img2_370.jpg 370w
+                  .\img\projects\img2_450.jpg 450w,
+                  .\img\projects\img2_708.jpg 708w,
+                  .\img\projects\img2_740.jpg 740w,
+                  .\img\projects\img2_900.jpg 900w
+                "
+                src="./img/projects/img2_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Постер New Orlean vs Golden Star"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">
@@ -120,9 +148,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-3.jpg"
+                srcset="
+                  .\img\projects\img3_354.jpg 354w,
+                  .\img\projects\img3_370.jpg 370w
+                  .\img\projects\img3_450.jpg 450w,
+                  .\img\projects\img3_708.jpg 708w,
+                  .\img\projects\img3_740.jpg 740w,
+                  .\img\projects\img3_900.jpg 900w
+                "
+                src="./img/projects/img3_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Ресторан Seafood"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Ресторан Seafood</h3>
@@ -131,9 +168,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-4.jpg"
+                srcset="
+                  .\img\projects\img4_354.jpg 354w,
+                  .\img\projects\img4_370.jpg 370w
+                  .\img\projects\img4_450.jpg 450w,
+                  .\img\projects\img4_708.jpg 708w,
+                  .\img\projects\img4_740.jpg 740w,
+                  .\img\projects\img4_900.jpg 900w
+                "
+                src="./img/projects/img4_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Маркетинговий проєкт Prime"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Проєкт Prime</h3>
@@ -142,9 +188,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-5.jpg"
+                srcset="
+                  .\img\projects\img5_354.jpg 354w,
+                  .\img\projects\img5_370.jpg 370w
+                  .\img\projects\img5_450.jpg 450w,
+                  .\img\projects\img5_708.jpg 708w,
+                  .\img\projects\img5_740.jpg 740w,
+                  .\img\projects\img5_900.jpg 900w
+                "
+                src="./img/projects/img5_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Додаток Boxes"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Проєкт Boxes</h3>
@@ -153,9 +208,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-6.jpg"
+                srcset="
+                  .\img\projects\img6_354.jpg 354w,
+                  .\img\projects\img6_370.jpg 370w
+                  .\img\projects\img6_450.jpg 450w,
+                  .\img\projects\img6_708.jpg 708w,
+                  .\img\projects\img6_740.jpg 740w,
+                  .\img\projects\img6_900.jpg 900w
+                "
+                src="./img/projects/img6_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Веб-сайт Inspiration has no Borders"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Inspiration has no Borders</h3>
@@ -164,9 +228,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-7.jpg"
+                srcset="
+                  .\img\projects\img7_354.jpg 354w,
+                  .\img\projects\img7_370.jpg 370w
+                  .\img\projects\img7_450.jpg 450w,
+                  .\img\projects\img7_708.jpg 708w,
+                  .\img\projects\img7_740.jpg 740w,
+                  .\img\projects\img7_900.jpg 900w
+                "
+                src="./img/projects/img7_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Видання Limited Edition"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Видання Limited Edition</h3>
@@ -175,9 +248,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-8.jpg"
+                srcset="
+                  .\img\projects\img8_354.jpg 354w,
+                  .\img\projects\img8_370.jpg 370w
+                  .\img\projects\img8_450.jpg 450w,
+                  .\img\projects\img8_708.jpg 708w,
+                  .\img\projects\img8_740.jpg 740w,
+                  .\img\projects\img8_900.jpg 900w
+                "
+                src="./img/projects/img8_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Маркетинговий проєкт LAB"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Проєкт LAB</h3>
@@ -186,9 +268,18 @@
             </li>
             <li class="projects__item">
               <img
-                src="./img/project-img-9.jpg"
+                srcset="
+                  .\img\projects\img9_354.jpg 354w,
+                  .\img\projects\img9_370.jpg 370w
+                  .\img\projects\img9_450.jpg 450w,
+                  .\img\projects\img9_708.jpg 708w,
+                  .\img\projects\img9_740.jpg 740w,
+                  .\img\projects\img9_900.jpg 900w
+                "
+                src="./img/projects/img9_450.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="Додаток Growing Business"
-                width="370"
+                loading="lazy"
               />
               <div class="projects__content">
                 <h3 class="projects__title">Growing Business</h3>
@@ -300,5 +391,61 @@
         </div>
       </div>
     </footer>
+
+    <!-- Меню Телефону -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" viewBox="0 0 20 20" width="40" height="40">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-link link current-mobile" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-link link" href="./contacts.html">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="tel:+380961111111" class="mobile-contacts-link phone link"
+            >+38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts-link mail link"
+            >info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

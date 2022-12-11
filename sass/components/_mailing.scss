@@ -1,5 +1,7 @@
 .mailing {
-  margin-left: 93px;
+  @media screen and (min-width: 1199.98px) {
+    margin-left: 93px;
+  }
 }
 
 .mailing__text {
@@ -7,14 +9,25 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1199.98px) {
+    text-align: left;
+  }
 }
 
 .mailing__form {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 1199.98px) {
+    flex-direction: row;
+    gap: 12px
+  }
 }
 
 .mailing__input {
@@ -22,9 +35,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  width: 358px;
+  width: 450px;
   padding: 15px 16px;
   color: var(--footer-color);
+
+  @media screen and (min-width: 1199.98px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-weight: 400;
@@ -43,6 +60,7 @@
   line-height: 1.87;
   display: flex;
   align-items: center;
+  align-self: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
@@ -53,6 +71,7 @@
   cursor: pointer;
   padding: 10px 28px;
   gap: 10px;
+  width: 200px;
 }
 
 .mailing__icon {

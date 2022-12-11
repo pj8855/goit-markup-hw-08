@@ -11,9 +11,19 @@ header {
 }
 
 .contacts {
-  display: flex;
-  gap: 50px;
-  justify-self: flex-end;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+    justify-self: flex-end;
+  }
 }
 
 .header__contacts {
