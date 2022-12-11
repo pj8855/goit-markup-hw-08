@@ -8,12 +8,12 @@
 
   background-image: 
   linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url(../../img/heros/img_s.jpg);
+  url(../img/heros/img_s.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image:
       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/heros/img_s@2x.jpg);
+      url(../img/heros/img_s@2x.jpg);
   }
 
 // Tablet
@@ -22,12 +22,12 @@
     background-size: 768px;
     background-image: 
     linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../img/heros/img_m.jpg);
+    url(../img/heros/img_m.jpg);
 
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
         linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../img/heros/img_m@2x.jpg);
+        url(../img/heros/img_m@2x.jpg);
     }
   }
 
@@ -38,12 +38,12 @@
     padding: 200px 0;
     background-image:
       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/heros/img_b.jpg);
+      url(../img/heros/img_b.jpg);
 
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
         linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../img/heros/img_b@2x.jpg);
+        url(../img/heros/img_b@2x.jpg);
     }
   }
 }
