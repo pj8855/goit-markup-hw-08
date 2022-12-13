@@ -77,8 +77,20 @@ ul {
 header {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header {
@@ -95,38 +107,53 @@ header {
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
     margin-left: auto;
-    margin-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 50px;
     justify-self: flex-end;
   }
 }
 
-.header__contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  text-decoration: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 767px) {
+  .header__contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .header__contacts {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .header__contacts:hover, .header__contacts:focus {
   color: var(--brand-color);
@@ -175,12 +202,19 @@ header {
   }
 }
 
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
-  margin-left: 64px;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin-left: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 0;
+  }
 }
 
 .nav__link {
@@ -280,7 +314,6 @@ header {
 @media screen and (min-width: 769px) {
   .heros {
     background-size: 1600px;
-    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/heros/img_b.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heros/img_b.jpg);
   }
@@ -289,6 +322,11 @@ header {
   .heros {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/heros/img_b@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heros/img_b@2x.jpg);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .heros {
+    padding: 200px 0;
   }
 }
 
@@ -300,7 +338,7 @@ header {
   text-transform: uppercase;
   color: var(--footer-color);
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1199.98px) {
@@ -918,6 +956,14 @@ address {
   background-color: var(--brand-color);
 }
 
+.mailing {
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .mailing {
+    width: auto;
+  }
+}
 @media screen and (min-width: 1199.98px) {
   .mailing {
     margin-left: 93px;
@@ -966,9 +1012,13 @@ address {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  width: 450px;
   padding: 15px 16px;
   color: var(--footer-color);
+}
+@media screen and (min-width: 479px) {
+  .mailing__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .mailing__input {

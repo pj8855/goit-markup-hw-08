@@ -1,8 +1,18 @@
 header {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header {
@@ -14,30 +24,38 @@ header {
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: auto;
-    margin-right: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
+    flex-direction: row;
     gap: 50px;
     justify-self: flex-end;
   }
 }
 
 .header__contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 767px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &:hover,
   &:focus {
