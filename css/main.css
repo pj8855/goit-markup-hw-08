@@ -326,7 +326,7 @@ header {
 }
 @media screen and (min-width: 1199.98px) {
   .heros {
-    padding: 200px 0;
+    padding: 82px 0;
   }
 }
 
@@ -343,7 +343,7 @@ header {
 }
 @media screen and (min-width: 1199.98px) {
   .heros__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
